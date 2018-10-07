@@ -8,6 +8,7 @@ TagManager:
   - 3x1
   - powerup
   - coin
+  - DeathMenu
   layers:
   - Default
   - TransparentFX

@@ -14,6 +14,12 @@ public class GameManager : MonoBehaviour {
 
     private ScoreManager theScoreManager;
 
+    public Scroll scrollBackground;
+    private Material[] scrollMaterial;
+    private MeshRenderer scrollRen;
+   
+
+
     public DeathMenu theDeathScreen;
 
     public bool powerUpReset;
@@ -23,6 +29,8 @@ public class GameManager : MonoBehaviour {
 
         platformStartPoint = platformGenerator.position;
         playerStartPoint = thePlayer.transform.position;
+
+        
 
         theScoreManager = FindObjectOfType<ScoreManager>();
 		
@@ -36,8 +44,10 @@ public class GameManager : MonoBehaviour {
     {
         theScoreManager.scoreIncreasing = false;
         thePlayer.gameObject.SetActive(false);
-
+        
         theDeathScreen.gameObject.SetActive(true);
+
+        scrollBackground.scrollSpeed = 1;
 
         // StartCoroutine("RestartGameCo");
     }
@@ -55,6 +65,18 @@ public class GameManager : MonoBehaviour {
         thePlayer.gameObject.SetActive(true);
         theScoreManager.scoreCount = 0;
         theScoreManager.scoreIncreasing = true;
+        scrollBackground.scrollSpeed = scrollBackground.scrollSpeedStore;
+        //scrollRen = scrollBackground.GetComponent<MeshRenderer>();
+        //scrollMaterial = scrollRen.materials;
+
+
+        //scrollMaterial[0].mainTexture.wrapMode = TextureWrapMode.Clamp;
+        
+        //scrollMaterial[0].mainTexture.wrapMode = TextureWrapMode.Repeat;
+
+
+
+
 
         powerUpReset = true;
     }

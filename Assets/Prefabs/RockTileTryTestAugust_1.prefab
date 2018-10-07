@@ -9,90 +9,82 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1278614925687054}
+  m_RootGameObject: {fileID: 1958380522680328}
   m_IsPrefabParent: 1
---- !u!1 &1278614925687054
+--- !u!1 &1958380522680328
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4859129779809562}
-  - component: {fileID: 212357736386911890}
-  - component: {fileID: 58903808041725388}
-  - component: {fileID: 114892170356672306}
-  - component: {fileID: 114040702704376786}
-  m_Layer: 0
-  m_Name: PowerUp
-  m_TagString: powerup
+  - component: {fileID: 4854343381684210}
+  - component: {fileID: 212300002721717970}
+  - component: {fileID: 61634425289079842}
+  - component: {fileID: 114414975047808576}
+  m_Layer: 8
+  m_Name: RockTileTryTestAugust_1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4859129779809562
+--- !u!4 &4854343381684210
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1278614925687054}
+  m_GameObject: {fileID: 1958380522680328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.67, y: -1.73, z: 0}
+  m_LocalPosition: {x: 1.4930043, y: -10.993535, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &58903808041725388
-CircleCollider2D:
+--- !u!61 &61634425289079842
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1278614925687054}
+  m_GameObject: {fileID: 1958380522680328}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.2734375
---- !u!114 &114040702704376786
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &114414975047808576
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1278614925687054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 082ddb4647d38b845bf573ab5860a02e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doublePoints: 1
-  safeMode: 0
-  powerUpTime: 3
-  powerUpSprites:
-  - {fileID: 21300000, guid: 7d11dc6f330e2b84f8b9f1172157f8cf, type: 3}
-  - {fileID: 21300000, guid: ce6c3ad98e8d01e4897fafdf6937caeb, type: 3}
---- !u!114 &114892170356672306
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1278614925687054}
+  m_GameObject: {fileID: 1958380522680328}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b4c3dcbb33c12134aabcda061d428278, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   platformDestructionPoint: {fileID: 0}
---- !u!212 &212357736386911890
+--- !u!212 &212300002721717970
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1278614925687054}
+  m_GameObject: {fileID: 1958380522680328}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -119,11 +111,11 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 680436be8c909fc43bc93cc929e3bdff, type: 3}
+  m_Sprite: {fileID: 21300002, guid: 3517cc494ea82fe4791ba5282742169b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.546875, y: 0.375}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0

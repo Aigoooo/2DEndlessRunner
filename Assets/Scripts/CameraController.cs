@@ -7,12 +7,21 @@ public class CameraController : MonoBehaviour {
     public PlayerController thePlayer;
 
     private Vector3 lastPlayerPosition;
+
+    public Scroll theScroll;
+    private Vector3 lastScrollPosition;
+
+
+
     private float distanceToMove;
 
 	// Use this for initialization
 	void Start () {
         thePlayer = FindObjectOfType<PlayerController>();
         lastPlayerPosition = thePlayer.transform.position;
+
+        //theScroll = FindObjectOfType<Scroll>();
+        //lastScrollPosition = theScroll.transform.position;
 
     }
 	
@@ -25,5 +34,8 @@ public class CameraController : MonoBehaviour {
 
         lastPlayerPosition = thePlayer.transform.position;
 
-	}
+        
+        //lastScrollPosition = theScroll.transform.position;
+
+    }
 }
